@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="2">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Bebidas</title>
+    </head>
+<body>
+    <header>
+        <h1>PRUEBA</h1>  
+    </header>
+    <main>
+        <article>  
+            <header>
+            <h2>Promociones:</h2>
+            <figure>
+            <img src="img/bebidas.png" width="250" height="250" alt="Productos de ferreteria"><br>
+            <figcaption>Productos en Promocion</figcaption>
+            </figure>  
+        </header>
+        <section class="form-container">
+            <p>Esta pagina se dedica  a la venta al por mayor y menor bebidas gaseosas</p>  
+            <h3>Realiza tus pedidos !</h3>
+            <form id="form" action="/">
+              <fieldset>
+              <legend>Ingrese sus datos de contacto</legend>
+              <p><label for="name">
+              Nombre: <input type="text" id="name" name="person_name" >
+              <!--<abbr title="required" aria-label="required">*</abbr>-->
+              </label></p>
+              <p><label for="email">
+              E-Mail: <input type="text" id="email" name="email_person" >
+              <!--<abbr title="required" aria-label="required">*</abbr>-->
+              </label></p>
+              <p><label for="phone">
+              Numero telefonico(+57): (opcional):<input type="tel" id="phone" name="phone_person">
+              </label></p>
+              </fieldset>
+              <fieldset>
+                <legend>Seleccione el producto que deseea pedir:</legend>
+                <p><input type="checkbox" id="coca cola" name="coca cola"> <label for="coca cola">COCA COLA</label></p>
+                <p><input type="checkbox" id="COLOMBIANA" name="COLOMBIANA"><label for="COLOMBIANA">COLOMBIANA</label></p>
+                <p><input type="checkbox" id="pipeline" name="UVA"><label for="UVA">UVA</label></p>
+                </fieldset>
+                <label class="tp" for="message">Otro tipo de producto?(opcional):</label><br>
+                <textarea id="message" name="message" maxlength="50" minlength="5" rows="5"></textarea>
+             <fieldset id="mediosdepago">
+         <strong>Medios de pago:</strong>
+              <abbr title="required" aria-label="required">*</abbr><br>
+              <label for="cash">Efectivo:<input type="radio" id="cash" name="method" ></label><br> 
+              <label for="card">Tarjeta:<input type="radio" id="card" name="method" ></label><br>
+              <label for="pse">PSE:<input type="radio" id="pse" name="method" ></label><br>
+            </fieldset>
+            <p id="button">
+            <button type="submit" id="btn_submit">Enviar pedido</button> 
+            <button type="reset" id="btn_reset">Cancelar</button>   
+            </p> 
+            </form>
+            </section>
+        </article>
+    </main>
+    <footer>   
+        <hr> 
+        <p>Mayor Informacion:</p>
+         <nav>
+          <ul>
+          <li>Telefono: 310 206 3332</li>
+          <li>Email: andresrivera9707@gmail.com</li>
+          </ul>
+         </nav>
+         <div id="informacion">
+        <p>Gracias por visitar nuestra pagina</p>
+        <p>Autor: Andres Felipe Rivera Puin</p>  
+       </div>  
+      </footer>
+<script src="js/script.js"></script>
+</body>
+</html> 

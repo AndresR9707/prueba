@@ -1,0 +1,26 @@
+create database bebidas;
+use bebidas;
+create table cliente (
+idPersona int primary key not null,
+nombrePersona varchar (25),
+apellidoPersona varchar (25)
+);
+create table bebida (
+idBebida int primary key not null,
+nombre varchar (25),
+valor int
+);
+create table empresa	 (
+idEmpresa int primary key not null,
+nombreEmpresa varchar (25)
+);
+insert into cliente values (1, 'ANDRES', 'RIVERA');
+insert into cliente values (2, 'FELIPE', 'PUIN');
+
+insert into bebida values (001, 'COCA COLA', 1500);
+insert into bebida values (002, 'COLOMBIANA', 1800);
+insert into bebida values (003, 'UVA', 2100);
+
+insert into empresa values (12345, 'bebidas');
+
+
